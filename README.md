@@ -1,4 +1,4 @@
-scorsese
+Scorsese
 ========
 
 Movie Mode for Vim
