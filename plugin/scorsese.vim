@@ -11,7 +11,9 @@
 function! s:scorsese_start(...)
   if a:0
     try
-      echo 'Turning Movie Mode On.' | echo a:1
+      echo 'Turning Movie Mode On.' . a:1
+      "map , call s:scorsese_insert()<CR>
+      nnoremap z a<c-r>=scorsese#insert()<esc><esc>
       "call scorsese#set_map()
       "let g:arrowmapper_map = a:1
     catch
